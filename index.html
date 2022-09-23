@@ -32,20 +32,47 @@
         flex-direction: column;
         align-items: left;
         justify-content: center;
+        margin: 0 auto;
+        max-width: 90%;
       }
       .wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: left;
         column-gap: 2rem;
         row-gap: 2rem;
         width: 100%;
       }
       .market {
         width: 45%;
+        min-width: 400px;
         display: flex;
         flex-direction: column;
+        border-top: 5px solid #324090;
+        margin-top: 1rem;
+      }
+      p {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+      h1 {
+        font-size: 2rem;
+        margin: 1rem 0 0.5rem 0;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0 0.5rem 0;
+      }
+      @media screen and (max-width: 800px) {
+        .wrapper {
+          flex-direction: column;
+          align-items: center;
+        }
+        .market {
+          width: 100%;
+          min-width: 100%;
+        }
       }
     </style>
   </head>
@@ -56,6 +83,14 @@
       <div class="wrapper">
         <div class="market">
           <h2 class="title">The Moral Uncertainty Research Competition</h2>
+          <p>
+            As ML systems automate more aspects of our lives, they may encounter
+            ethical dilemmas. If they can reliably identify moral ambiguity,
+            they are more likely to proceed cautiously or indicate an operator
+            should intervene. The objective of this competition is to detect
+            whether a text
+          </p>
+          <br />
           <iframe
             src="https://manifold.markets/embed/apartresearch/how-good-will-the-auroc-be-at-the-e"
             title="How good will the AUROC be at the end of the Moral Uncertainty Research Competition?"
@@ -66,6 +101,14 @@
         </div>
         <div class="market">
           <h2 class="title">The Autocast Competition</h2>
+          <p>
+            The Autocast competition tests machine learning models’ ability to
+            make accurate and calibrated forecasts of future real-world events.
+            From predicting how COVID-19 will spread, to anticipating conflicts,
+            using ML to help inform decision-makers could have far-reaching
+            positive effects on the world.
+          </p>
+          <br />
           <iframe
             src="https://manifold.markets/embed/apartresearch/what-brier-score-will-the-best-mode"
             title="What Brier score will the best model achieve in the $125k Autocast warmup competition?"

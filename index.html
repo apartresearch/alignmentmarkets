@@ -23,16 +23,57 @@
     <meta property="og:locale" content="en_US" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@apartresearch" />
-    <style></style>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        width: 100%;
+      }
+      .market {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="market">
-        <iframe
-          src="https://manifold.markets/embed/apartresearch/how-good-will-the-auroc-be-at-the-e"
-          title="How good will the AUROC be at the end of the Moral Uncertainty Research Competition?"
-          frameborder="0"
-        ></iframe>
+    <div class="container">
+      <h1>Alignment Markets</h1>
+      <p>📈 Bet on the progress of benchmarks in ML safety!</p>
+      <div class="wrapper">
+        <div class="market">
+          <h2 class="title">The Moral Uncertainty Research Competition</h2>
+          <iframe
+            src="https://manifold.markets/embed/apartresearch/how-good-will-the-auroc-be-at-the-e"
+            title="How good will the AUROC be at the end of the Moral Uncertainty Research Competition?"
+            frameborder="0"
+            width="100%"
+            height="500px"
+          ></iframe>
+        </div>
+        <div class="market">
+          <h2 class="title">The Autocast Competition</h2>
+          <iframe
+            src="https://manifold.markets/embed/apartresearch/what-brier-score-will-the-best-mode"
+            title="What Brier score will the best model achieve in the $125k Autocast warmup competition?"
+            frameborder="0"
+            width="100%"
+            height="500px"
+          ></iframe>
+        </div>
       </div>
     </div>
   </body>
